@@ -58,4 +58,9 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  #追加したコード
+  config.assets.configure do |env|
+    env.cache = nil
+  end
 end
